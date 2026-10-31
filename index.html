@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday</title>
+    <title>Best Friend Birthday</title>
     <style>
       :root {
-        --bg-1: #140d1f;
-        --bg-2: #1b1230;
-        --bg-3: #2d1d43;
-        --gold: #ffd77a;
-        --gold-deep: #f4b94d;
-        --pink: #ff82cf;
-        --rose: #ffc2dc;
-        --purple: #a78bfa;
-        --lavender: #e9dcff;
-        --ivory: #fffaf2;
-        --paper: #f8f0ea;
-        --ink: #3d2a52;
-        --muted: #725d90;
-        --shadow: rgba(10, 5, 17, 0.65);
+        --bg-1: #0d0b1a;
+        --bg-2: #1c122d;
+        --bg-3: #2b1d40;
+        --violet: #a88ce8;
+        --violet-2: #d4c7ff;
+        --pink: #ff8acb;
+        --rose: #ffc8e2;
+        --gold: #ffd978;
+        --gold-2: #f1b85a;
+        --ivory: #fffaf3;
+        --paper: #f7efe8;
+        --ink: #382c4a;
+        --muted: #715d93;
+        --shadow: rgba(12, 7, 20, 0.78);
       }
 
       * { box-sizing: border-box; }
@@ -30,9 +30,9 @@
         height: 100%;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background:
-          radial-gradient(circle at 15% 20%, rgba(255, 130, 207, 0.22), transparent 18%),
-          radial-gradient(circle at 80% 12%, rgba(123, 210, 255, 0.22), transparent 20%),
-          linear-gradient(135deg, var(--bg-1), var(--bg-2) 34%, var(--bg-3));
+          radial-gradient(circle at 15% 18%, rgba(255, 138, 203, 0.18), transparent 18%),
+          radial-gradient(circle at 82% 10%, rgba(168, 140, 232, 0.22), transparent 20%),
+          linear-gradient(135deg, var(--bg-1), var(--bg-2) 40%, var(--bg-3));
         color: white;
       }
 
@@ -53,21 +53,21 @@
         position: absolute;
         border-radius: 50%;
         filter: blur(90px);
-        opacity: 0.72;
+        opacity: 0.75;
       }
 
       .glow.one {
         width: 360px;
         height: 360px;
-        background: rgba(255, 130, 207, 0.18);
-        top: 7%;
+        background: rgba(255, 138, 203, 0.18);
+        top: 8%;
         left: 8%;
       }
 
       .glow.two {
-        width: 430px;
-        height: 430px;
-        background: rgba(167, 139, 250, 0.2);
+        width: 460px;
+        height: 460px;
+        background: rgba(168, 140, 232, 0.18);
         right: 7%;
         bottom: 8%;
       }
@@ -80,8 +80,8 @@
       .confetti span {
         position: absolute;
         width: 10px;
-        height: 16px;
-        top: -20%;
+        height: 18px;
+        top: -22%;
         border-radius: 3px;
         animation: fall 11s linear infinite;
         opacity: 0;
@@ -90,41 +90,41 @@
       @keyframes fall {
         0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
         12% { opacity: 1; }
-        100% { transform: translateY(110vh) rotate(370deg); opacity: 0; }
+        100% { transform: translateY(118vh) rotate(380deg); opacity: 0; }
       }
 
       .scene {
         position: relative;
-        width: min(95vw, 820px);
-        height: min(90vh, 840px);
+        width: min(96vw, 900px);
+        height: min(92vh, 860px);
         display: grid;
         place-items: center;
       }
 
       .envelope-wrap {
         position: relative;
-        width: min(88vw, 650px);
+        width: min(88vw, 700px);
         height: 430px;
         display: grid;
         place-items: center;
+        perspective: 1800px;
         cursor: pointer;
         user-select: none;
-        perspective: 1600px;
       }
 
       .envelope {
         position: relative;
-        width: min(78vw, 580px);
+        width: min(80vw, 600px);
         height: 330px;
-        border-radius: 14px;
-        background: linear-gradient(180deg, #f1e9ff 0%, #e5d9ff 28%, #f8f0ff 100%);
-        box-shadow: 0 42px 84px rgba(15, 10, 30, 0.68), 0 18px 30px rgba(177, 146, 255, 0.18);
+        background: linear-gradient(180deg, #efe7ff 0%, #e4d7ff 26%, #f6f0ff 100%);
+        border-radius: 12px;
+        box-shadow: 0 42px 84px rgba(15, 10, 26, 0.72), 0 20px 32px rgba(155, 131, 228, 0.2);
         overflow: visible;
         transition: transform 0.8s ease;
       }
 
       .envelope:hover {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
       }
 
       .envelope .left, .envelope .right {
@@ -132,7 +132,7 @@
         top: 0;
         bottom: 0;
         width: 50%;
-        background: linear-gradient(180deg, #dbd4f3 0%, #cfc2f2 100%);
+        background: linear-gradient(180deg, #dad0f8 0%, #cebff4 100%);
         z-index: 1;
       }
 
@@ -152,37 +152,37 @@
         right: 0;
         top: 0;
         height: 180px;
-        background: linear-gradient(180deg, #f9f3ff 0%, #e6d4ff 100%);
+        background: linear-gradient(180deg, #faf5ff 0%, #e9d9ff 100%);
         clip-path: polygon(0% 0%, 50% 68%, 100% 0%, 100% 100%, 0% 100%);
-        border-bottom: 1px solid rgba(110, 81, 166, 0.22);
+        border-bottom: 1px solid rgba(104, 79, 149, 0.22);
         transform-origin: top center;
-        transition: transform 0.9s ease, filter 0.5s ease;
-        z-index: 4;
+        transition: transform 0.95s cubic-bezier(.18,.9,.24,1), filter 0.5s ease;
+        z-index: 5;
       }
 
-      .envelope .flap::before {
+      .flap::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(255,255,255,0.4), rgba(255,255,255,0));
+        background: linear-gradient(180deg, rgba(255,255,255,0.42), rgba(255,255,255,0));
       }
 
       .seal {
         position: absolute;
         left: 50%;
-        top: 46%;
+        top: 45%;
         transform: translate(-50%, -50%);
-        width: 96px;
-        height: 96px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        background: radial-gradient(circle at 32% 28%, #fff2b2, #ffd77a 35%, #f7b74f 100%);
-        box-shadow: 0 16px 30px rgba(247, 183, 79, 0.28);
-        border: 3px solid rgba(255,255,255,0.7);
+        background: radial-gradient(circle at 35% 30%, #fff5bf, #ffd978 38%, #f3b95e 100%);
+        border: 3px solid rgba(255,255,255,0.72);
+        box-shadow: 0 18px 30px rgba(243, 185, 94, 0.26);
         z-index: 6;
         display: grid;
         place-items: center;
-        font-size: 2.1rem;
-        color: rgba(95, 53, 0, 0.9);
+        font-size: 2.15rem;
+        color: rgba(98, 62, 18, 0.94);
         transition: transform 0.8s ease, opacity 0.8s ease;
       }
 
@@ -193,57 +193,77 @@
       .paper {
         position: absolute;
         inset: 22px 24px 18px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.88));
+        background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.88));
         border-radius: 12px;
-        border: 1px solid rgba(120, 95, 160, 0.16);
+        border: 1px solid rgba(120, 95, 160, 0.18);
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
-        overflow: hidden;
         z-index: 2;
-        transition: transform 0.9s ease, opacity 0.9s ease, box-shadow 0.9s ease;
+        transition: transform 0.9s ease, box-shadow 0.9s ease;
+        overflow: hidden;
       }
 
       .paper-inner {
         position: absolute;
         inset: 0;
-        padding: 30px 28px 20px;
+        padding: 30px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: linear-gradient(180deg, rgba(252,247,244,0.7), rgba(248,238,232,0.9));
+        background: linear-gradient(180deg, rgba(255, 250, 243, 0.74), rgba(247, 239, 232, 0.92));
       }
 
-      .vintage-label {
+      .mini-tag {
         position: absolute;
         top: 18px;
         left: 50%;
         transform: translateX(-50%);
         padding: 8px 16px;
         border-radius: 999px;
-        background: rgba(255, 215, 122, 0.16);
-        border: 1px solid rgba(255, 215, 122, 0.45);
+        background: rgba(255, 217, 120, 0.16);
+        border: 1px solid rgba(255, 217, 120, 0.4);
         color: var(--ink);
         letter-spacing: 0.18em;
-        font-size: 0.68rem;
         text-transform: uppercase;
+        font-size: 0.66rem;
         font-weight: 700;
+      }
+
+      .inside-title {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+        font-weight: 800;
+        margin-top: 26px;
+        color: transparent;
+        background: linear-gradient(135deg, #8d65d9 0%, #ff8acb 30%, #f0b95d 70%, #fde9b3 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      .inside-sub {
+        margin-top: 10px;
+        font-size: 0.76rem;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--muted);
       }
 
       .letter {
         position: absolute;
         left: 50%;
         top: 52%;
-        width: min(74vw, 520px);
+        width: min(76vw, 530px);
         padding: 28px 22px 24px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(246,236,227,0.95));
+        background: linear-gradient(180deg, rgba(255,255,255,0.74), rgba(246,236,227,0.98));
         color: var(--ink);
-        border: 1px solid rgba(90, 63, 122, 0.14);
-        box-shadow: 0 22px 32px rgba(90, 66, 98, 0.14);
-        transform: translate(-50%, -65%) rotate(-8deg) scale(0.82);
+        border: 1px solid rgba(89, 63, 118, 0.13);
+        box-shadow: 0 20px 36px rgba(63, 39, 81, 0.16);
+        transform: translate(-50%, -65%) rotate(-8deg) scale(0.78);
         opacity: 0;
-        transition: transform 1.1s cubic-bezier(.18,.9,.28,1.08), opacity 0.9s ease;
-        z-index: 8;
+        transition: transform 1.1s cubic-bezier(.18,.9,.24,1.03), opacity 0.8s ease;
+        z-index: 9;
       }
 
       .letter::before {
@@ -253,9 +273,40 @@
         border: 1px solid rgba(120, 98, 141, 0.12);
       }
 
-      .envelope-wrap.open .letter {
-        opacity: 1;
-        transform: translate(-50%, -52%) rotate(0deg) scale(1);
+      .letter-header {
+        margin: 0 0 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .letter-title {
+        margin: 0 0 8px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2.4rem, 5vw, 3.7rem);
+        line-height: 0.9;
+        font-weight: 700;
+        color: #5a3d78;
+      }
+
+      .letter-copy {
+        margin: 18px auto 0;
+        max-width: 33ch;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.04rem;
+        line-height: 1.8;
+        color: var(--ink);
+      }
+
+      .signoff {
+        margin-top: 20px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.82rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
       }
 
       .envelope-wrap.open .flap {
@@ -265,7 +316,7 @@
 
       .envelope-wrap.open .paper {
         transform: translateY(-22px) scale(1.02);
-        box-shadow: 0 18px 28px rgba(128, 93, 170, 0.16);
+        box-shadow: 0 18px 28px rgba(130, 96, 176, 0.16);
       }
 
       .envelope-wrap.open .seal {
@@ -273,55 +324,23 @@
         opacity: 0;
       }
 
-      .letter-header {
-        margin: 0 0 18px;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 0.72rem;
-        letter-spacing: 0.32em;
-        text-transform: uppercase;
-        color: var(--muted);
-      }
-
-      .letter-title {
-        margin: 0 0 8px;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: clamp(2.2rem, 5vw, 3.6rem);
-        letter-spacing: -0.04em;
-        line-height: 0.9;
-        font-weight: 700;
-        color: #5d3d7f;
-      }
-
-      .letter-copy {
-        margin: 18px auto 0;
-        max-width: 30ch;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 1.02rem;
-        line-height: 1.8;
-        color: var(--ink);
-      }
-
-      .signoff {
-        margin-top: 20px;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--muted);
+      .envelope-wrap.open .letter {
+        opacity: 1;
+        transform: translate(-50%, -52%) rotate(0deg) scale(1);
       }
 
       .hint {
         position: absolute;
-        bottom: 20px;
+        bottom: 22px;
         left: 50%;
         transform: translateX(-50%);
-        padding: 10px 20px;
+        padding: 10px 18px;
         border-radius: 999px;
         background: rgba(255,255,255,0.06);
-        border: 1px solid rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.12);
         letter-spacing: 0.18em;
         text-transform: uppercase;
-        font-size: 0.67rem;
+        font-size: 0.68rem;
         color: rgba(255,255,255,0.82);
         animation: pulse 2.6s ease-in-out infinite;
       }
@@ -332,19 +351,12 @@
       }
 
       @media (max-width: 600px) {
-        .envelope-wrap {
-          height: 360px;
-        }
-
-        .envelope {
-          height: 290px;
-        }
-
+        .envelope-wrap { height: 360px; }
+        .envelope { height: 290px; }
         .letter {
-          width: min(80vw, 420px);
+          width: min(82vw, 430px);
           padding: 22px 18px 18px;
         }
-
         .letter-copy {
           font-size: 0.96rem;
         }
@@ -356,21 +368,21 @@
       <div class="glow one"></div>
       <div class="glow two"></div>
       <div class="confetti" aria-hidden="true">
-        <span style="left: 6%; background: #ff82cf; animation-delay: 0s;"></span>
-        <span style="left: 14%; background: #ffd77a; animation-delay: 1.2s;"></span>
-        <span style="left: 22%; background: #7dd3fc; animation-delay: 0.8s;"></span>
-        <span style="left: 33%; background: #a78bfa; animation-delay: 2.2s;"></span>
-        <span style="left: 42%; background: #ff82cf; animation-delay: 1.7s;"></span>
-        <span style="left: 52%; background: #ffd77a; animation-delay: 2.8s;"></span>
-        <span style="left: 63%; background: #7dd3fc; animation-delay: 1.4s;"></span>
-        <span style="left: 72%; background: #a78bfa; animation-delay: 3.1s;"></span>
-        <span style="left: 82%; background: #ff82cf; animation-delay: 0.7s;"></span>
-        <span style="left: 91%; background: #ffd77a; animation-delay: 2.5s;"></span>
+        <span style="left: 6%; background: #ff8acb; animation-delay: 0s;"></span>
+        <span style="left: 14%; background: #ffd978; animation-delay: 1.2s;"></span>
+        <span style="left: 22%; background: #a88ce8; animation-delay: 0.8s;"></span>
+        <span style="left: 33%; background: #ff8acb; animation-delay: 2.2s;"></span>
+        <span style="left: 42%; background: #ffd978; animation-delay: 1.7s;"></span>
+        <span style="left: 52%; background: #a88ce8; animation-delay: 2.8s;"></span>
+        <span style="left: 63%; background: #ff8acb; animation-delay: 1.4s;"></span>
+        <span style="left: 72%; background: #ffd978; animation-delay: 3.1s;"></span>
+        <span style="left: 82%; background: #a88ce8; animation-delay: 0.7s;"></span>
+        <span style="left: 91%; background: #ff8acb; animation-delay: 2.5s;"></span>
       </div>
     </div>
 
     <div class="scene">
-      <div class="envelope-wrap" id="envelopeWrap" tabindex="0" role="button" aria-label="Open birthday letter">
+      <div class="envelope-wrap" id="envelopeWrap" tabindex="0" role="button" aria-label="Open for my best friend birthday">
         <div class="envelope">
           <div class="left"></div>
           <div class="right"></div>
@@ -379,25 +391,31 @@
 
           <div class="paper">
             <div class="paper-inner">
-              <div class="vintage-label">A Letter of Love</div>
-              <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 2.2rem; letter-spacing: -0.08em; font-weight: 700; color: #5c3a7f; margin-top: 24px;">Happy<br />Birthday</div>
+              <div class="mini-tag">Best Friend Forever</div>
+              <div class="inside-title">Happy<br />Birthday</div>
+              <div class="inside-sub">To my favorite person</div>
             </div>
           </div>
         </div>
 
         <article class="letter" aria-live="polite">
-          <p class="letter-header">My Dearest One</p>
+          <p class="letter-header">For My Best Friend</p>
           <h1 class="letter-title">Happy Birthday</h1>
           <p class="letter-copy">
-            May your year be wrapped in joy, lined with laughter, and filled with beautiful
-            little miracles. You deserve a life rich in wonder, success, calm, and unforgettable
-            memories. May every dream you carry bloom beautifully, and every wish find its way to you.
+            My dearest best friend, thank you for being the kind of person who makes life feel lighter,
+            brighter, and so much more beautiful. You are my safe place, my laughter, my joy, and my strongest
+            reminder that true friendship is a gift beyond words.
           </p>
           <p class="letter-copy">
-            Keep shining, keep loving, and keep believing in the magic that is already inside you.
-            Here’s to a brighter, kinder, more beautiful chapter ahead.
+            I hope this year brings you endless happiness, deep peace, unforgettable memories, and all the love
+            your heart can hold. May every dream you carry come true, and may life bless you with more laughter,
+            courage, and beautiful moments than you ever imagined.
           </p>
-          <div class="signoff">With love, always</div>
+          <p class="letter-copy">
+            You deserve the world, and I am so lucky to have you in mine. Happy birthday, best friend —
+            I love you more than words can say, and I am forever grateful for you.
+          </p>
+          <div class="signoff">Always yours</div>
         </article>
       </div>
 
@@ -407,10 +425,15 @@
     <script>
       const envelopeWrap = document.getElementById('envelopeWrap');
 
+      function openLetter() {
+        envelopeWrap.classList.add('open');
+      }
+
       function toggleOpen() {
         envelopeWrap.classList.toggle('open');
       }
 
+      setTimeout(openLetter, 650);
       envelopeWrap.addEventListener('click', toggleOpen);
       envelopeWrap.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
